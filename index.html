@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Fonts Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- carregar CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <title>Gulliver Traveller - Restaurantes</title>
 </head>
+
 <body>
     <!-- Cabeçalho principal -->
     <header class="header__principal">
@@ -17,8 +22,8 @@
             <ul class="menu">
                 <li class="menu__item"><a href="">Hotéis</a></li>
                 <li class="menu__item"><a href="">Alugue seu carro</a></li>
-                <li class="menu__item"><a href="">Gastronomia</a></li>
-                <li class="menu__item"><a href="">Vida Noturna  </a></li>
+                <li class="menu__item menu__selecionado"><a href="">Gastronomia</a></li>
+                <li class="menu__item"><a href="">Vida Noturna </a></li>
             </ul>
         </nav>
 
@@ -26,31 +31,114 @@
     <!-- Fim do cabeçalho principal -->
     <!-- Conteúdo principal -->
     <main>
+
         <article class="conteudo">
-        <p>
-            
-            Projeto Fuego Celeste, nasceu por 4 amigos apreciadores de uma boa carne e amantes da cultura parrilleira. Após diversos eventos de fogo de chão e parriladas, eles decidiram abrir um espaço na Vila Mariana e proporcionar essa deliciosa experiência para o público paulistano amantes de uma boa carne.
 
-        </p>
+            <section class="titulo">
+                <h1 class="conteudo__titulo">Coco Bambu</h1>
+            </section>
+            <section class="imagens">
+                <img class="imagem" src="./images/camarao-coco-bambu.jpg" alt="Imagem de um prato de camarão a milanesa servido na panela">
+            </section>
+            <section class="descricao">
+                <p>
+                    Os Restaurantes Coco Bambu possuem um amplo cardápio, com comidas e bebidas diferenciadas, feitas
+                    com os melhores ingredientes, pratos bem servidos, com valores acessíveis.
+                </p>
+            </section>
+            <section class="descricao">
+                <i class="fa-solid fa-link"></i>
+                <p>Site:</p>
+                <a href="https://cocobambu.com/" target="_blank">https://cocobambu.com/</a>
+            </section>            
+        </article>
 
-        </article>    
-    </main>   
+        <article class="detalhes">
+            <!-- section 1 -->
+            <section class="box">
+                <h2 class="box__titulo">Avaliação</h2>
+                <div class="estrelas">
+                    <i class="fa-solid fa-star estrela__amarela"></i>
+                    <i class="fa-solid fa-star estrela__amarela"></i>
+                    <i class="fa-solid fa-star estrela__amarela"></i>
+                    <i class="fa-solid fa-star estrela__amarela"></i>
+                    <i class="fa-solid fa-star-half estrela__amarela"></i>
+                </div>
+                <button class="botao__inserir__avaliacoes" >Inserir Avaliação</button>
+            </section>
+            <!-- fim section 1 -->
+
+            <!-- section 2 -->
+            <section class="box">
+                <h2 class="box__titulo">Detalhes</h2>
+                <p class="box__paragrafo">
+                    Região: Av. Paulista
+                </p>
+                <p class="box__paragrafo">
+                    Faixa de preço: R$ 60 - R$ 80
+                </p>
+                <p class="box__paragrafo">
+                    Tipo de cozinha: Frutos do mar
+                </p>
+                <p class="box__paragrafo">
+                    Horário de funcionamento: 11:30 AM - 11:00 PM
+                </p>
+                <p class="box__paragrafo">
+                    Estacionamernto no local: Sim
+                </p>
+            </section>
+            <!-- fim section 2 -->
+
+            <!-- section 3 -->
+            <section class="box">
+                <h2 class="box__titulo">Localização</h2>
+                <p class="box__paragrafo">
+                    R. Treze de Maio, 1933 - Bela Vista, São Paulo - SP, 01327-001
+                </p>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="300" height="200" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Coco%20Bambu%20Conceito%20P%C3%A1tio%20Paulista&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://putlocker-is.org"></a><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 250px;
+                                width: 350px;
+                            }
+                        </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 200px;
+                                width: 300px;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </section>
+            <!-- fim section 3 -->
+        </article>
+    </main>
     <!-- Fim do conteúdo principal -->
     <!-- Rodapé -->
-    <footer>
+    <footer class="rodape">
 
-        <h2>
-            Rodapé
-        </h2>
+        <h3 class="rodape__titulo">
+            © Gulliver Traveller 2022
+        </h3>
 
     </footer>
     <!-- Fim do rodapé -->
     <!-- Hand Talk -->
     <script src="https://plugin.handtalk.me/web/latest/handtalk.min.js"></script>
     <script>
-      var ht = new HT({
-        token: "86ff84a96e68f08b7217c055113cd60f"
-      });
-    </script>                                                                                                         
+        var ht = new HT({
+            token: "86ff84a96e68f08b7217c055113cd60f"
+        });
+    </script>
 </body>
+
 </html>
