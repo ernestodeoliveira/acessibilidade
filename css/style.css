@@ -124,6 +124,10 @@ html {
     background-color: #ed145d;
 }
 
+.botao__inserir__avaliacoes:hover {
+    cursor: pointer;
+}
+
 a:focus, a:hover {
     background-color: #ffffff;
     color: #000000;
